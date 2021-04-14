@@ -1,5 +1,8 @@
 # NASA Astronomy Picture of the Day 
 
+https://github.com/carlmontemayor/nasa-apod-redesign/actions/workflows/node.js.yml/badge.svg
+
+
 This is a new redesign of the existing APOD application that NASA owns. This is for accessibility and to give the current website a cool new look.
 
 - [Typescript](https://www.typescriptlang.org/)
