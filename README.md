@@ -1,4 +1,4 @@
-# NextJS Typescript Boilerplate
+# NASA Astronomy Picture of the Day 
 
 Bootstrap a developer-friendly NextJS app configured with:
 
