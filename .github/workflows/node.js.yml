@@ -32,7 +32,6 @@ jobs:
     
 
     - uses: amondnet/vercel-action@v20
-    - name: Vercel Deploy
       id: vercel-deploy
       if: github.event_name == 'push'
       with:
