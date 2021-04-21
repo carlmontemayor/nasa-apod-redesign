@@ -6,4 +6,5 @@ export const Home = (): JSX.Element => (
   </div>
 );
 
-export default Home;
+
+export default Home
