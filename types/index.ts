@@ -1,1 +1,1 @@
-export type { NASAResponse } from "./NASAResponse";
+export type { NASAResponse } from './NASAResponse'

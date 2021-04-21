@@ -1,6 +1,6 @@
-import "tailwindcss/tailwind.css";
-import type { AppProps /*, AppContext */ } from "next/app";
-import { NavigationBar } from "components/NavigationBar";
+import 'tailwindcss/tailwind.css'
+import type { AppProps /*, AppContext */ } from 'next/app'
+import { NavigationBar } from 'components/NavigationBar'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -8,8 +8,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <NavigationBar />
       <Component {...pageProps} />
     </>
-  );
-
+  )
 }
 
 // Only uncomment this method if you have blocking data requirements for

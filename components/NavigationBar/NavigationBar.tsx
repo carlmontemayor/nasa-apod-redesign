@@ -1,4 +1,4 @@
-import { ReactElement } from "react";
+import { ReactElement } from 'react'
 
 export const NavigationBar = (): ReactElement => {
   return (
@@ -15,5 +15,5 @@ export const NavigationBar = (): ReactElement => {
         Astronomy Picture of the Day
       </div>
     </nav>
-  );
-};
+  )
+}
