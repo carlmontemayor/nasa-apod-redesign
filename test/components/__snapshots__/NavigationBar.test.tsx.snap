@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavigationBar matches the snapshot 1`] = `
+<DocumentFragment>
+  <nav>
+    <div
+      class=""
+    >
+      <div
+        class="flex relative"
+      >
+        <div
+          class="font-bold text-5xl p-4 pr-0"
+        >
+          APOD
+        </div>
+        <div
+          class="font-bold text-sm center pr-4 pt-10 "
+        >
+          (astronomy picture of the day)
+        </div>
+      </div>
+    </div>
+    <div
+      class="font-bold text-sm  bottom-0 right-0 absolute p-2 "
+    >
+      Astronomy Picture of the Day
+    </div>
+  </nav>
+</DocumentFragment>
+`;
