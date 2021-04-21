@@ -1,5 +1,9 @@
+import { ImageViewer } from "components/ImageViewer";
+
 export const Home = (): JSX.Element => (
-  <div className="bg-black">this is tailwind.</div>
+  <div>
+    <ImageViewer />
+  </div>
 );
 
 export default Home;
