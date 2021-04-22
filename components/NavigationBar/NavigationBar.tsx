@@ -1,5 +1,6 @@
 import { ReactElement } from 'react'
 
+// This is a stateless component
 export const NavigationBar = (): ReactElement => {
   return (
     <nav>
