@@ -1,6 +1,6 @@
 import { ReactElement } from 'react'
 
-// This is a stateless component
+// This is a demo of husky, a git tool.
 export const NavigationBar = (): ReactElement => {
   return (
     <nav>
