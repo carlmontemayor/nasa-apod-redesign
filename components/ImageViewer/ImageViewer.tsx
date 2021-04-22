@@ -7,7 +7,7 @@ export const ImageViewer = (): ReactElement => {
   const [errorMessage, setErrorMessage] = useState<string>('')
 
   useEffect(() => {
-    const nasaData = fetchNASAImages()
+    const nasaData = fetchNASAImages(new Date())
     nasaData
       .then((data) => {
         setApodData(data)
