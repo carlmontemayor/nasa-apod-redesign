@@ -18,7 +18,7 @@ This is a new redesign of the existing APOD application that NASA owns. This is 
 
 ### Husky Demo (for pre-commits and pre-pushes)
 `Husky` is a cool tool. It formats and lints your code before every commit and push.
-![Husky Demo](https://github.com/carlmontemayor/nasa-apod-redesign/blob/main/docs/husky-demo.gif)
+![Husky Demo](https://github.com/carlmontemayor/nasa-apod-redesign/blob/main/docs/husky-demo-2.gif)
 
 ## Test Coverage
 Here is a picture of the current test coverage (should be added as a badge, but I think a screenshot should suffice).
