@@ -1,29 +1,51 @@
 # NASA Astronomy Picture of the Day
 
-https://github.com/carlmontemayor/nasa-apod-redesign/actions/workflows/node.js.yml/badge.svg
+![CI/CD Badge](https://github.com/carlmontemayor/nasa-apod-redesign/actions/workflows/node.js.yml/badge.svg)
 
 This is a new redesign of the existing APOD application that NASA owns. This is for accessibility and to give the current website a cool new look.
 
-something
-
+## Technologies
 - [Typescript](https://www.typescriptlang.org/)
 - Linting with [ESLint](https://eslint.org/)
 - Formatting with [Prettier](https://prettier.io/)
 - Linting, typechecking and formatting on by default using [`husky`](https://github.com/typicode/husky) for commit hooks
 - Testing with [Jest](https://jestjs.io/) and [`react-testing-library`](https://testing-library.com/docs/react-testing-library/intro)
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
+## Continuous Integration + Continuous Deployment Technologies
+- Vercel for deployments
+- Github Actions for integration
+- Git pre-commit and pre-push with Husky
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-typescript-eslint-jest&project-name=with-typescript-eslint-jest&repository-name=with-typescript-eslint-jest)
+### Husky Demo (for pre-commits and pre-pushes)
+`Husky` is a cool tool. It formats and lints your code before every commit and push.
+![Husky Demo](link to husky)
 
-## How to use
+## Test Coverage
+![Test Coverage snapshot](link to snapshot)
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
+## Testing Technologies
+- Jest
+- React Testing Library
 
+## Running Locally
+Before running, please make sure you have `node` installed (v14 and above).
+
+First, clone the repo.
 ```bash
-npx create-next-app --example with-typescript-eslint-jest with-typescript-eslint-jest-app
-# or
-yarn create next-app --example with-typescript-eslint-jest with-typescript-eslint-jest-app
+git clone https://github.com/carlmontemayor/nasa-apod-redesign.git
 ```
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+Move into the aproppriate directory
+```bash
+cd nasa-apod-redesign
+```
+
+Then, install the required packages.
+```bash
+npm install 
+```
+
+Lastly, run it locally with the following command.
+```bash
+npm run dev
+```
