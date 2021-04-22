@@ -4,6 +4,8 @@ https://github.com/carlmontemayor/nasa-apod-redesign/actions/workflows/node.js.y
 
 This is a new redesign of the existing APOD application that NASA owns. This is for accessibility and to give the current website a cool new look.
 
+something
+
 - [Typescript](https://www.typescriptlang.org/)
 - Linting with [ESLint](https://eslint.org/)
 - Formatting with [Prettier](https://prettier.io/)
