@@ -4,21 +4,17 @@ exports[`Home page matches snapshot 1`] = `
 <DocumentFragment>
   <nav>
     <div
-      class=""
+      class="flex relative"
     >
       <div
-        class="flex relative"
+        class="font-bold text-5xl p-4 pr-0"
       >
-        <div
-          class="font-bold text-5xl p-4 pr-0"
-        >
-          APOD
-        </div>
-        <div
-          class="font-bold text-sm center pr-4 pt-10 "
-        >
-          (astronomy picture of the day)
-        </div>
+        APOD
+      </div>
+      <div
+        class="font-bold text-sm center pr-4 pt-10 "
+      >
+        (astronomy picture of the day)
       </div>
     </div>
     <div
