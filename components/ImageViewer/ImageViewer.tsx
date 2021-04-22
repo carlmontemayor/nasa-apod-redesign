@@ -1,13 +1,13 @@
-import { fetchNASAImages } from 'api/fetchImage'
 import { ReactElement, useEffect, useState } from 'react'
 import { NASAResponse } from 'types'
+import { fetchNASAImages } from 'api/fetchImage'
 
 export const ImageViewer = (): ReactElement => {
   const [apodData, setApodData] = useState<NASAResponse>()
   const [errorMessage, setErrorMessage] = useState<string>('')
 
   useEffect(() => {
-    const nasaData = fetchNASAImages()
+    const nasaData = fetchNASAImages(new Date())
     nasaData
       .then((data) => {
         setApodData(data)
@@ -26,6 +26,7 @@ export const ImageViewer = (): ReactElement => {
           <div className="p-8">
             {apodData.media_type === 'image' ? (
               <img
+                alt={apodData.title}
                 className="rounded-xl shadow-2xl mb-8 max-w-full max-h-full"
                 height="auto"
                 width="auto"
