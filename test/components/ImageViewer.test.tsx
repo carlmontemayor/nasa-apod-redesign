@@ -1,10 +1,10 @@
 import * as React from 'react'
-// import { fetchNASAImages } from '../../api/fetchImage'
+import { fetchNASAImages } from '../../api/fetchImage'
 import { ImageViewer } from '../../components/ImageViewer/ImageViewer'
-import { render, cleanup, act } from '@testing-library/react'
+import { render, cleanup, act, waitFor } from '@testing-library/react'
 import '@testing-library/jest-dom'
-// import { RandomAprilImage } from '../fixtures/exampleNASAResponses'
-// import { mocked } from 'ts-jest/utils'
+import { RandomAprilImage } from '../fixtures/exampleNASAResponses'
+import { mocked } from 'ts-jest/utils'
 
 afterEach(() => {
   cleanup
@@ -12,15 +12,17 @@ afterEach(() => {
 })
 
 jest.mock('../../api/fetchImage')
-// const mockedAxios = mocked(fetchNASAImages)
+const mockedAxios = mocked(fetchNASAImages)
 
 describe('ImageViewer', () => {
-  test('renders somethign', async () => {
+  test('renders a sample image from API', async () => {
+    mockedAxios.mockImplementationOnce(() => Promise.resolve(RandomAprilImage))
+
     await act(async () => {
       const { getByText } = render(<ImageViewer />)
-      expect(
-        getByText('There was an error fetching the data.')
-      ).toBeInTheDocument()
+      await waitFor(() => [
+        expect(getByText(RandomAprilImage.title)).toBeTruthy(),
+      ])
     })
   })
 })
